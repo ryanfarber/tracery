@@ -1,36 +1,21 @@
 # tracery
-Tracery: a story-grammar generation library for javascript
 
-This is my attempt to package up [Tracery](https://github.com/galaxykate/tracery/) as a Node library.
+This is a simplified implimentation of [tracery](https://www.npmjs.com/package/tracery-grammar) by [galaxykate](https://github.com/galaxykate).
 
-## Installation
-
-This is hosted at npm, so it can be installed like so:
-
-```bash
-$ npm install tracery-grammar --save
-```
-
-## Example usage
+*"Tracery is a super-simple tool and language to generate text."*
 
 ```javascript
-var tracery = require('tracery-grammar');
+const Tracery = require("@surfingpikachu/tracery")
+const tracery = new Tracery({
+	origin: ["#hello# #world# #emoji#"],
+	hello: ["hello", "hey", "hi"],
+	world: ["world", "earth", "planet earth"],
+	emoji: ["🌎", "🌍", "🌏"]
+})
 
-var grammar = tracery.createGrammar({
-  'animal': ['panda','fox','capybara','iguana'],
-  'emotion': ['sad','happy','angry','jealous'],
-  'origin':['I am #emotion.a# #animal#.'],
-});
+tracery("hello")
+// hey
 
-grammar.addModifiers(tracery.baseEngModifiers); 
-
-console.log(grammar.flatten('#origin#'));
-```
-
-Sample output:
-
-```plaintext
-I am a happy iguana.
-I am an angry fox.
-I am a sad capybara.
-```
+tracery("origin")
+// hello planet earth 🌎
+````
