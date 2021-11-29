@@ -11,12 +11,10 @@ function Tracery(data = {}) {
 	// GET //
 	this.main = function(origin) {
 		if (!origin) return undefined
-		if (typeof origin !== "string") throw new Error("input must be a string")
+		if (typeof origin !== "string") throw new Error("input must be a string!")
 		if (!data.hasOwnProperty(origin)) return undefined
-
-
+			
 		let output = grammar.flatten(`#${origin}#`)
-		console.log(output)
 		return output
 	}
 
