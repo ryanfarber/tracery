@@ -1,5 +1,5 @@
 {
-  "name": "@surfingpikachu/tracery",
+  "name": "@ryanforever/tracery",
   "version": "1.0.6",
   "description": "a story-grammar generation library for javascript",
   "main": "index.js",
