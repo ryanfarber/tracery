@@ -1,6 +1,6 @@
 {
   "name": "@ryanforever/tracery",
-  "version": "1.0.8",
+  "version": "1.0.7",
   "description": "a story-grammar generation library for javascript",
   "main": "index.js",
   "scripts": {
