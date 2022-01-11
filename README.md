@@ -5,7 +5,7 @@ This is a simplified implimentation of [tracery](https://www.npmjs.com/package/t
 *"Tracery is a super-simple tool and language to generate text."*
 
 ```javascript
-const Tracery = require("@surfingpikachu/tracery")
+const Tracery = require("@ryanforever/tracery")
 const tracery = new Tracery({
 	origin: ["#hello# #world# #emoji#"],
 	hello: ["hello", "hey", "hi"],
